@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #header h1 {
+            margin-bottom: 10px;
+        }
+        #header .nav {
+            display: flex;
+            justify-content: center;
+        }
+        #header .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        #header .search {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #header .search input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        #header .search button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #main-content {
+            padding: 20px;
+            background-image: url('Background.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(30% - 40px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-section h2 {
+            margin-bottom: 10px;
+        }
+        .content-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            margin-bottom: 10px;
+        }
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Your Website</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Jobs</a>
+            <a href="#">Employers</a>
+            <a href="#">Candidates</a>
+            <a href="#">Packages</a>
+            <a href="#">Companies</a>
+            <a href="#">Resumes</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-section" id="latest-jobs-section">
+            <h2>Latest Jobs</h2>
+            <ul id="latest-jobs-list">
+                <li>Software Engineer</li>
+                <li>Data Analyst</li>
+                <li>Marketing Manager</li>
+                <li>Web Developer</li>
+                <li>Graphic Designer</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="latest-resumes-section">
+            <h2>Latest Resumes</h2>
+            <ul id="latest-resumes-list">
+                <!-- Data will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div class="content-section" id="latest-companies-section">
+            <h2>Latest Companies</h2>
+            <ul id="latest-companies-list">
+                <!-- Data will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- Social Media Icons -->
+        <a href="#"><img src="fb.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+    </div>
+
+     <script>
+        function showLatestJobs() {
+            var jobsList = document.getElementById('latest-jobs-list');
+            jobsList.innerHTML = "<li>Real Job 1</li><li>Real Job 2</li><li>Real Job 3</li>"; // Add real job data
+        }
+
+        function showLatestResumes() {
+            var resumesList = document.getElementById('latest-resumes-list');
+            resumesList.innerHTML = "<li>Real Resume 1</li><li>Real Resume 2</li><li>Real Resume 3</li>"; // Add real resume data
+        }
+
+        function showLatestCompanies() {
+            var companiesList = document.getElementById('latest-companies-list');
+            companiesList.innerHTML = "<li>Real Company 1</li><li>Real Company 2</li><li>Real Company 3</li>"; // Add real company data
+        }
+    </script>
+</body>
+</html>

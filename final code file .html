@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #header h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        #header .nav {
+            display: flex;
+            justify-content: center;
+        }
+        #header .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        #header .search {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #header .search input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        #header .search button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #main-content {
+            padding: 20px;
+            background-image: url('Background.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(30% - 40px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-section h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .content-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Fatima Website</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Jobs</a>
+            <a href="#">Employers</a>
+            <a href="#">Candidates</a>
+            <a href="#">Packages</a>
+            <a href="#">Companies</a>
+            <a href="#">Resumes</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-section" id="latest-jobs-section">
+            <h2>Latest Jobs</h2>
+            <ul id="latest-jobs-list">
+                <li>Software Engineer</li>
+                <li>Data Analyst</li>
+                <li>Marketing Manager</li>
+                <li>Web Developer</li>
+                <li>Graphic Designer</li>
+                <li>Accountant</li>
+                <li>Project Manager</li>
+                <li>Sales Representative</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="latest-resumes-section">
+            <h2>Latest Resumes</h2>
+            <ul id="latest-resumes-list">
+                <li>John Doe - Software Developer</li>
+                <li>Jane Smith - Data Analyst</li>
+                <li>Michael Johnson - Marketing Specialist</li>
+                <li>Emily Brown - Web Designer</li>
+                <li>David Wilson - Graphic Designer</li>
+                <li>Sarah Thompson - Project Manager</li>
+                <li>Ryan Garcia - Sales Executive</li>
+                <li>Lisa Martinez - HR Manager</li>
+            </ul>
+            <p>Browse more resumes on our <a href="#">Resumes</a> page.</p>
+        </div>
+
+        <div class="content-section" id="latest-companies-section">
+            <h2>Latest Companies</h2>
+            <ul id="latest-companies-list">
+                <li>ABC Corporation</li>
+                <li>XYZ Enterprises</li>
+                <li>Global Tech Solutions</li>
+                <li>Future Innovations Inc.</li>
+                <li>Creative Designs Ltd.</li>
+                <li>Smart Solutions Group</li>
+                <li>TechWorks Inc.</li>
+                <li>Optimal Solutions Ltd.</li>
+            </ul>
+            <p>Discover more companies on our <a href="#">Companies</a> page.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- Social Media Icons -->
+        <a href="#"><img src="fb.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+    </div>
+
+    </body>
+</html>
