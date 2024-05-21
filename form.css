@@ -1,0 +1,99 @@
+body {
+    background-color: Grey;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #333333;
+}
+
+p {
+    text-align: left;
+    color: #666666;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.name-fields, .birth-gender-fields, .city-state-fields, .contact-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name-field, .birth-date, .gender-field, .city-field, .state-field, .email-field, .mobile-field, .phone-field, .work-field {
+    flex: 1;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: blue;
+}
+
+small {
+    display: block;
+    color: #999999;
+    font-size: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 48%;
+    height: 50px; /* Set a fixed height for the buttons */
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: green;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Common spacing for fields in the same row */
+.row-spacing > div, .row-spacing > button {
+    margin-right: 10px;
+}
+
+.row-spacing > div:last-child, .row-spacing > button:last-child {
+    margin-right: 0;
+}
+
+/* Specific styles for Company and Courses */
+.company-field input[type="text"], .course-field select {
+    width: 49%;
+}
